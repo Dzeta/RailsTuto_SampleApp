@@ -20,10 +20,10 @@ describe "User pages" do
 
     describe "with valid information" do
     	before do
-    		fill_in "Name", 		with: "Example User"
-    		fill_in "Email", 		with: "user@example.com"
-    		fill_in "Password", 	with: "Foobar"
-    		fill_in "Confirmation", with: "Foobar"
+    		fill_in "Name",               with: "Example User"
+    		fill_in "Email",              with: "user@example.com"
+    		fill_in "Password",           with: "Foobar"
+    		fill_in "Confirm Password",   with: "Foobar"
     	end
 
     	it "should create a user" do
@@ -59,7 +59,7 @@ describe "User pages" do
     describe "page" do
       it { should have_content("Update your profile") }
       it { should have_title("Edit user") }
-      it { should have_link('change', href: 'http://gravatar.com/emails') }
+      it { should have_link('Change', href: 'http://gravatar.com/emails') }
     end
 
     describe "with invalid information" do
